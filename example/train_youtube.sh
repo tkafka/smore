@@ -11,7 +11,7 @@ else
 fi
 
 # generate the network
-zcat youtube-links.txt.gz | awk -F '	' '{print $1" "$2" 1"}' > net.txt
+gzcat youtube-links.txt.gz | awk -F '	' '{print $1" "$2" 1"}' > net.txt
 
 # run the comment
 ../cli/deepwalk -train net.txt -save rep_dw.txt -undirected 1 -dimensions 64 -walk_times 1 -walk_steps 40 -window_size 5 -negative_samples 5 -alpha 0.025 -threads $Threads
