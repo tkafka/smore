@@ -21,8 +21,8 @@ cli/walklets
 cli/warp
 
 # Example
-example/*.txt
-example/*.txt.gz
+example/**/*.txt
+example/**/*.txt.gz
 
 
 # Distribution / packaging
