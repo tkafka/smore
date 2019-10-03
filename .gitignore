@@ -6,6 +6,25 @@ __pycache__/
 # C extensions
 *.so
 
+# Binaries
+*.o
+cli/app
+cli/bpr
+cli/deepwalk
+cli/hoprec
+cli/hpe
+cli/line
+cli/mf
+cli/nemf
+cli/nerank
+cli/walklets
+cli/warp
+
+# Example
+example/*.txt
+example/*.txt.gz
+
+
 # Distribution / packaging
 .Python
 env/
